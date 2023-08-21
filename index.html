@@ -352,43 +352,60 @@
                     </li>
                 </ul>
             </div>
-            <div class="subscribe-form"></div>
+            <div class="subscribe-form-container">
+                <p class="subscribe-form-title">Subscribe</p>
+                <form class="subscribe-form">
+                    <label class="subscribe-from-label">
+                        <input name="user_email" type="email" placeholder="E-mail" class="subscribe-form-input" />
+                        <button type="submit" class="subscribe-form-button">Subscribe
+                            <svg width="24" height="24" class="subscribe-form-button-icon">
+                                <use href="./images/icons.svg#subscribe-icon"></use>
+                            </svg>
+                        </button>
+                    </label>
+                </form>
+            </div>
         </div>
     </footer>
-    <div class="modal-window *is-hidden" data-modal>
+    <div class="modal-window is-hidden" data-modal>
         <div class="modal-window-content">
+            <p class="contacts-form-description"> Leave your contacts and we will call you back</p>
             <button type="button" class="modal-window-button" data-modal-close>
                 <svg class="modal-window-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-modal-button"></use>
                 </svg>
             </button>
             <form class="contacts-form">
-                <p class="contacts-form-description"> Leave your contacts and we will call you back</p>
-                <label class="contact-form-label">
-                    <p class="contact-form-label-description">Name</p>
-                    <input class="contact-form-input" type="text" name="user_name" pattern="[a-zA-Zа-яА-ЯіІїЇєЄ']+"
-                        title="John Smith" required />
-                </label>
-                <label class="contact-form-label">
-                    <p class="contact-form-label-description">Phone</p>
-                    <input class="contact-form-input" type="tel" name="user_name"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" required />
-                </label>
-                <label class="contact-form-label">
-                    <p class="contact-form-label-description">Email</p>
-                    <input class="contact-form-input" type="email" name="user_email" required />
-                </label>
-                <label class="contact-form-label">
-                    <p class="contact-form-label-description">Comment</p>
-                    <textarea class="contact-form-message" name="user_message" placeholder="Text input"></textarea>
-                </label>
-                <label class="contact-form-checkbox-label">
-                    I accept the terms and conditions of the <a class="contact-form-privacy-policy-link" href="">Privacy
-                        Policy</a>
-                    <input class="contact-form-checkbox" type="checkbox" name="user_accept_policy"
-                        value="accepted_policy" required />
-                </label>
-                <button class="contact-form-button" type="submit">Send</button>
+                <div class="contact-form-container">
+                    <label class="contact-form-label">
+                        <p class="contact-form-label-description">Name</p>
+                        <input class="contact-form-input" type="text" name="user_name" pattern="[a-zA-Zа-яА-ЯіІїЇєЄ']+"
+                            title="John Smith" required />
+                    </label>
+                    <label class="contact-form-label">
+                        <p class="contact-form-label-description">Phone</p>
+                        <input class="contact-form-input" type="tel" name="user_name"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" required />
+                    </label>
+                    <label class="contact-form-label">
+                        <p class="contact-form-label-description">Email</p>
+                        <input class="contact-form-input" type="email" name="user_email" required />
+                    </label>
+                    <label class="contact-form-label">
+                        <p class="contact-form-label-description">Comment</p>
+                        <textarea class="contact-form-message" name="user_message" placeholder="Text input"></textarea>
+                    </label>
+                    <label class="contact-form-checkbox-label">
+                        I accept the terms and conditions of the <a class="contact-form-privacy-policy-link"
+                            href="">Privacy
+                            Policy</a>
+                        <input class="contact-form-checkbox" type="checkbox" name="user_accept_policy"
+                            value="accepted_policy" required />
+                    </label>
+                    <button class="contact-form-button" type="submit">Send</button>
+                </div>
+
+
             </form>
         </div>
     </div>

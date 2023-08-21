@@ -507,6 +507,10 @@ img {
     line-height: 1.5;
 }
 
+.footer-social-links {
+    padding-right: 80px;
+}
+
 .footer-social-media-text {
     font-weight: 500;
     font-size: 16px;
@@ -556,6 +560,65 @@ img {
     letter-spacing: 0.02em;
     line-height: 1.5;
 
+}
+
+.subscribe-form-container {
+    display: block;
+    margin-left: 80px;
+}
+
+.subscribe-form-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color)
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+
+
+}
+
+.subscribe-form-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white-color);
+
+}
+
+.subscribe-form-button {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif, ;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    cursor: pointer;
+    background-color: var(--primary-brand-color);
+    border: none;
+    border-radius: 4px;
+}
+
+.subscribe-form-button-icon {
+    margin-left: 16px;
+    fill: var(--white-color);
 }
 
 /*************************************PORTFOLIO************************************/
@@ -708,6 +771,7 @@ img {
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
 
 }
 
@@ -780,12 +844,13 @@ img {
 
 .contacts-form-description {
     font-family: Roboto;
+    text-align: center;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     /* 150% */
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     color: var(--dark-navy-ble-color);
     padding-top: 72px;
     margin-bottom: 16px;
@@ -800,4 +865,8 @@ img {
     /* 116.667% */
     letter-spacing: 0.48px;
     color: var(--light-slate-subtle-text-color);
+}
+
+.contact-form-container {
+    margin-bottom: 8px;
 }
