@@ -370,12 +370,13 @@
     </footer>
     <div class="modal-window is-hidden" data-modal>
         <div class="modal-window-content">
-            <p class="contacts-form-description"> Leave your contacts and we will call you back</p>
             <button type="button" class="modal-window-button" data-modal-close>
                 <svg class="modal-window-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-modal-button"></use>
                 </svg>
             </button>
+            <p class="contacts-form-description"> Leave your contacts and we will call you back</p>
+
             <form class="contacts-form">
                 <div class="contact-form-container">
                     <label class="contact-form-label" for="user-name">
@@ -410,32 +411,33 @@
                         </svg>
                     </div>
                 </div>
-                <div class="contact-form-container"><label class="contact-form-label" for="user-comment">
+                <div class="contact-form-message-container"><label class="contact-form-label" for="user-comment">
                         Comment</label>
 
-                    <textarea id="user-comment" class="contact-form-message" name="user-comment"
-                        placeholder="Text input" class="contact-form-free-text"></textarea>
+                    <textarea id="user-comment" name="user-comment" placeholder="Text input"
+                        class="contact-form-free-text"></textarea>
                 </div>
 
                 <div class="contact-form-checkbox-container">
                     <input id="user-privacy" value="true" class="contact-form-checkbox visually-hidden" type="checkbox"
-                        name="user-privacy" value="accepted_policy" required />
+                        name="user-privacy" required />
                     <label class="contact-form-checkbox-label" for="user-privacy">
-                        I accept the terms and conditions of the
                         <span class="contact-form-checkbox-icon-container">
                             <svg class="contact-form-checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checkbox1"></use>
                             </svg>
-                        </span>
+                        </span>I accept the terms and conditions of the
+
                         <a class="contact-form-privacy-policy-link" href="">Privacy Policy</a>
 
                     </label>
                 </div>
                 <button class="contact-form-button" type="submit">Send</button>
+
+
+
+            </form>
         </div>
-
-
-        </form>
     </div>
     </div>
     <script src="./js/modal.js"></script>
