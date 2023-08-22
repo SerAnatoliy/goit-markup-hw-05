@@ -981,16 +981,21 @@ img {
 
 }
 
+.contact-form-checkbox:focus {
+    border-color: var(--pressed-state-color);
+}
+
+.contact-form-checkbox:focus+.contact-form-checkbox-icon {
+    fill: var(--pressed-state-color);
+}
+
 .contact-form-checkbox:checked+.contact-form-checkbox-label>.contact-form-checkbox-icon-container {
     background-color: var(--pressed-state-color);
     border: none;
     fill: var(--cloud-light-color);
 }
 
-.contact-form-checkbox:focus+.contact-form-checkbox-label>.contact-form-checkbox-icon-container {
-    border: var(--pressed-state-color);
 
-}
 
 
 
