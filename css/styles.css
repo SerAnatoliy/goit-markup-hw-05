@@ -989,6 +989,10 @@ img {
     fill: var(--pressed-state-color);
 }
 
+.contact-form-checkbox:focus+.contact-form-checkbox-label>.contact-form-checkbox-icon-container {
+    border-color: var(--pressed-state-color);
+}
+
 .contact-form-checkbox:checked+.contact-form-checkbox-label>.contact-form-checkbox-icon-container {
     background-color: var(--pressed-state-color);
     border: none;
